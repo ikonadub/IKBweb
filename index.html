@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella's Web Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<br/>
+
+<body>
+    <header>
+           <nav>
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="resume.html">Resume Synopsis</a></li>
+        </ul>
+    </nav>
+
+    <hr />
+            
+    </header>
+
+    <section>
+            <div class="intro-header">
+            <h1>Au revoir!</h1>
+            </div>
+
+
+        </br>
+
+            <div class="links-container">
+               
+                <a target="GitHub" href ="https://github.com/ikonadub"></a>
+                <a target="_blank" href ="https://www.linkedin.com/in/isabellakb/"></a>
+            </div>
+
+
+        </section>
+
+
+
+    <footer>
+        <footer>
+        <p>&copy; 2025 Isabella Konadu Bernhardt. All rights reserved.</p>
+        <p>By <a >Isabella Konadu Bernhardt</a> ⭐ <a href="https://github.com/ikonadukb">GitHub</a> | <a href="https://www.linkedin.com/in/isabellakb/">LinkedIn</a> </p>
+        <a href="mailto:isabellakb.resume@outlook.com">Isabella KB</a> 
+            <nav>
+                <a target="_blank" href ="https://github.com/ikonadub"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href ="https://www.linkedin.com/in/isabellakb/"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href ="https://sites.google.com/view/isabella-konadu-bernhardt/home"><i class="fa-brands fa-google"></i></a>
+            </nav>
+
+        
+    </footer>
+
+    <script>
+        // JavaScript for color picker functionality
+            const body = document.querySelector('body');
+            const colorInput = document.getElementById('color-picker');
+            const colorDiv = document.querySelector('.color-div');
+            const hiddenText = document.querySelector('.color-div p');
+            const resetBtn = document.querySelector('.color-div button');
+            const playBtn = document.querySelector('play-game');
+            
+            
+
+        function playGame() {
+            colorDiv.style.display = 'block'
+            playBtn.style.display = 'none'
+            
+        }   
+
+        function changeColor() {
+             const selectedColor = colorInput.value
+             body.style.background = selectedColor
+             resetBtn.style.display = 'block'
+             hiddenText.style.display = 'block'
+             colorInput.style.display = 'none'
+        }
+
+        function resetColor() {
+            body.style.background = 'white'
+            colorInput.style.display = 'block'
+            playBtn.style.display = 'block'
+            hiddenText.style.display = 'none'
+            resetBtn.style.display = 'block'
+            colorDiv.style.display = 'none'
+            
+            
+        }   
+
+    </script>
+    </body>
+
+
+    </html>

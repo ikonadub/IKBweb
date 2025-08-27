@@ -1,0 +1,257 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+header, main,footer {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav i {
+    font-size: 1.3rem;
+}
+
+main,section {
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    gap: 1rem;
+}
+
+section {
+    gap: 1rem;
+}
+
+.intro-header p{
+    padding-top: 0.25;
+
+}
+
+.intro-description {
+    max-width: 500px;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.link-arrow {
+    color: var(--color-link);
+    transform: rotate(-45deg);
+}
+
+.color-div {
+    display: flex;
+    flex-direction: colomn;
+    gap: 0.5rem;
+}
+
+.cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.tech-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;    
+    padding: 0.25rem 0;
+}
+
+.tech-list div {
+    font-size: 1rem;
+  border-radius: var(--border-radius-small);
+}
+
+.tech-list p {
+    font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+    .project-card {
+        gap: 4rem;
+    }
+
+    .project-card {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .project-card:(even) {
+        flex-direction: row-reverse;
+    }
+
+    .project-card img {
+        width: 300px;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+.project-card .img-div {
+    max-width: 30%;
+}
+
+body {
+    background-color: #d8cccc;
+    padding: 2%;
+}
+
+
+h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  text-transform: lowercase;  
+  font-size: 2rem;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  font-family: "Libre Baskerville", serif; 
+}
+
+ .creative-img {
+  display: block;
+  width: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.creative-img { 
+  border: 5px solid white;
+  width: 50%;
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  font-family: "Libre Baskerville", serif; 
+  margin: 20px auto; /* Adds space around the paragraph */
+  max-width: 800px; /* Limits the width for better readability */
+}
+
+h4 {
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  bottom: 0px; /*Positioning from the bottom */
+  width: 100%; /*Ensures footer spans the entire width */
+  
+}
+
+h5 {
+  text-align: center;
+  color:  black;
+  font-family: "Libre Baskerville", serif; 
+  margin: 20px auto; /* Adds space around the paragraph */
+  max-width: 800px; /* Limits the width for better readability */
+}
+ 
+footer h4 {
+    color: black;
+}
+
+
+section h2 {
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+section id="about" h2 {
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: :left;
+}
+
+section id="contact" h2 {
+    color: #6439ff;
+    font-family: "Libre Baskerville", serif;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: :left;
+}
+
+section id="gallery" h2 {
+    color: #6439ff;
+    font-family: "Libre Baskerville", serif;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: :left;
+}
+
+section id="inspiration" h2 {
+    color: #6439ff;
+    font-family: "Libre Baskerville", serif;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: :left;
+}
+
+section id="inspirations" h2 {
+    color: black;
+    font-family: "Libre Baskerville", serif;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: :left;
+}
+
+section id="resume" h2 {
+    color: #6439ff;
+    font-family: "Libre Baskerville", serif;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: :left;
+}
+
+
+/* Additional styles for better readability */
